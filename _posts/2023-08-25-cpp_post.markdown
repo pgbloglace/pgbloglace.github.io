@@ -1,0 +1,5 @@
+---
+layout: cpp_post
+---
+
+<h1> C++ Post 1 </h1>
