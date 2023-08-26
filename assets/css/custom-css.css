@@ -27,3 +27,22 @@ color: black;
 background-color: #04AA6D;
 color: white;
 }
+
+.topnav_left {
+overflow: hidden;
+background-color: #000000;
+}
+
+.topnav_left a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav_left a:hover {
+background-color: #ddd;
+color: black;
+}
