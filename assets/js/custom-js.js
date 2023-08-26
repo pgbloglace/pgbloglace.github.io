@@ -18,11 +18,3 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
-$(document).ready(function(){
-  $('[lang="es"]').hide();
-  $('#switch-lang').click(function() {
-    $('[lang="es"]').toggle();
-    $('[lang="en"]').toggle();
-  });
-});
