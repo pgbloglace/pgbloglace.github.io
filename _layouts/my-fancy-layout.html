@@ -6,10 +6,12 @@
     <script src="/assets/js/custom-js.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
-      $('[lang="es"]').hide();
-      $('#switch-lang').click(function() {
-        $('[lang="es"]').toggle();
-        $('[lang="en"]').toggle();
+      $(document).ready(function(){
+        $('[lang="es"]').hide();
+        $('#switch-lang').click(function() {
+          $('[lang="es"]').toggle();
+          $('[lang="en"]').toggle();
+        });
       });
     </script>
     <title>pgbloglace</title>
