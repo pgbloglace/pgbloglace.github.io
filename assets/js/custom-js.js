@@ -27,6 +27,7 @@ $(document).ready(function(){
     $('#en').show();
     $('#sp').hide();
     $('#ge').hide();
+    localStorage.setItem("test", "#en")
   });
   $('#switch-lang-sp').click(function() {
     $('#en').hide();
@@ -38,5 +39,6 @@ $(document).ready(function(){
     $('#en').hide();
     $('#sp').hide();
     $('#ge').show();
+    localStorage.setItem("test", "#ge")
   });
 });
