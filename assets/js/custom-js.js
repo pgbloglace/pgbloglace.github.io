@@ -26,9 +26,8 @@ $(document).ready(function(){
     $('#en').show();
     $('#es').hide();
   });
-});
-
-$(document).$('#switch-lang-es').click(function() {
-  $('#es').show();
-  $('#en').hide();
+  $('#switch-lang-es').click(function() {
+    $('#es').show();
+    $('#en').hide();
+  });
 });
