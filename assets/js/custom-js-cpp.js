@@ -1,4 +1,9 @@
 $(document).ready(function(){
+  $('#en').hide();
+  $('#sp').hide();
+  $('#ge').hide();
+  $(localStorage.getItem("test")).show();
+
   $('#switch-lang-en').click(function() {
     $('#en').show();
     $('#sp').hide();

@@ -32,6 +32,7 @@ $(document).ready(function(){
     $('#en').hide();
     $('#sp').show();
     $('#ge').hide();
+    localStorage.setItem("test", "#sp")
   });
   $('#switch-lang-ge').click(function() {
     $('#en').hide();
