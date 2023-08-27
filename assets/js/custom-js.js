@@ -20,9 +20,9 @@ function openCity(evt, cityName) {
 }
 
 $(document).ready(function(){
-  $('[lang="es"]').hide();
+  $('#es').hide();
   $('#switch-lang').click(function() {
-    $('[lang="es"]').toggle();
-    $('[lang="en"]').toggle();
+    $('#es').toggle();
+    $('#en').toggle();
   });
 });
