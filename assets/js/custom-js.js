@@ -20,25 +20,34 @@ function openCity(evt, cityName) {
 }
 
 $(document).ready(function(){
-  $('#en').show();
-  $('#sp').hide();
-  $('#ge').hide();
+  if (localStorage.getItem("lang") === null) {
+    $('#en').show();
+    $('#sp').hide();
+    $('#ge').hide();
+    localStorage.setItem("lang", "#en");
+  } else {
+    $('#en').hide();
+    $('#sp').hide();
+    $('#ge').hide();
+    $(localStorage.getItem("lang")).show();
+  }
+  
   $('#switch-lang-en').click(function() {
     $('#en').show();
     $('#sp').hide();
     $('#ge').hide();
-    localStorage.setItem("test", "#en")
+    localStorage.setItem("lang", "#en")
   });
   $('#switch-lang-sp').click(function() {
     $('#en').hide();
     $('#sp').show();
     $('#ge').hide();
-    localStorage.setItem("test", "#sp")
+    localStorage.setItem("lang", "#sp")
   });
   $('#switch-lang-ge').click(function() {
     $('#en').hide();
     $('#sp').hide();
     $('#ge').show();
-    localStorage.setItem("test", "#ge")
+    localStorage.setItem("lang", "#ge")
   });
 });

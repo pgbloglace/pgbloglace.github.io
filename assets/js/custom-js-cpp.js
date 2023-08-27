@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('#en').hide();
   $('#sp').hide();
   $('#ge').hide();
-  $(localStorage.getItem("test")).show();
+  $(localStorage.getItem("lang")).show();
 
   $('#switch-lang-en').click(function() {
     $('#en').show();
