@@ -26,7 +26,7 @@ $(document).ready(function(){
     $('#en').show();
     $('#es').hide();
   });
-  $('#switch-lang-es').click(function() {
+  $('#switch-lang-sp').click(function() {
     $('#es').show();
     $('#en').hide();
   });
