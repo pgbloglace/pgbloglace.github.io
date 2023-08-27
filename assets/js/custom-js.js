@@ -21,16 +21,16 @@ function openCity(evt, cityName) {
 
 $(document).ready(function(){
   $('#es').hide();
+  $('#en').show();
   $('#switch-lang-en').click(function() {
-    $('#es').toggle();
-    $('#en').toggle();
+    $('#en').show();
+    $('#es').hide();
   });
 });
 
 $(document).ready(function(){
-  $('#en').hide();
   $('#switch-lang-es').click(function() {
-    $('#en').toggle();
-    $('#es').toggle();
+    $('#es').show();
+    $('#en').hide();
   });
 });
