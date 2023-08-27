@@ -26,3 +26,11 @@ $(document).ready(function(){
     $('#en').toggle();
   });
 });
+
+$(document).ready(function(){
+  $('#en').hide();
+  $('#switch-lang-es').click(function() {
+    $('#en').toggle();
+    $('#es').toggle();
+  });
+});
