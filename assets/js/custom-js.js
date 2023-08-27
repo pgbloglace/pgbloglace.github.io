@@ -20,14 +20,22 @@ function openCity(evt, cityName) {
 }
 
 $(document).ready(function(){
-  $('#es').show();
-  $('#en').hide();
+  $('#en').show();
+  $('#sp').hide();
+  $('#ge').hide();
   $('#switch-lang-en').click(function() {
     $('#en').show();
-    $('#es').hide();
+    $('#sp').hide();
+    $('#ge').hide();
   });
   $('#switch-lang-sp').click(function() {
-    $('#es').show();
     $('#en').hide();
+    $('#sp').show();
+    $('#ge').hide();
+  });
+  $('#switch-lang-ge').click(function() {
+    $('#en').hide();
+    $('#sp').hide();
+    $('#ge').show();
   });
 });
