@@ -20,9 +20,21 @@ function openCity(evt, cityName) {
 }
 
 $(document).ready(function(){
-  /*$('#es').hide();*/
-  $('#switch-lang').click(function() {
-    $('#es').toggle();
+  $('#es').hide();
+  $('#switch-lang-en').click(function() {
+    $('#en').hide();
+    $('#es').hide();
+
     $('#en').toggle();
+  });
+});
+
+$(document).ready(function(){
+  $('#es').hide();
+  $('#switch-lang-es').click(function() {
+    $('#en').hide();
+    $('#es').hide();
+
+    $('#es').toggle();
   });
 });
