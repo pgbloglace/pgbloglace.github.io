@@ -20,8 +20,8 @@ function openCity(evt, cityName) {
 }
 
 $(document).ready(function(){
-  $('#es').hide();
-  $('#en').show();
+  $('#es').show();
+  $('#en').hide();
   $('#switch-lang-en').click(function() {
     $('#en').show();
     $('#es').hide();
