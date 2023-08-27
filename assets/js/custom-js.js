@@ -29,11 +29,31 @@ $(document).ready(function(){
     $('#en_home').show();
     $('#en_algorithms').show();
     $('#en_c_vision').show();
+
+    $('#sp_home').hide();
+    $('#sp_algorithms').hide();
+    $('#sp_c_vision').hide();
+  
+    $('#ge_home').hide();
+    $('#ge_algorithms').hide();
+    $('#ge_c_vision').hide();
   } else {
     $('#en').hide();
     $('#sp').hide();
     $('#ge').hide();
     $(localStorage.getItem("lang")).show();
+
+    $('#en_home').hide();
+    $('#en_algorithms').hide();
+    $('#en_c_vision').hide();
+
+    $('#sp_home').hide();
+    $('#sp_algorithms').hide();
+    $('#sp_c_vision').hide();
+  
+    $('#ge_home').hide();
+    $('#ge_algorithms').hide();
+    $('#ge_c_vision').hide();
 
     $(localStorage.getItem("lang") + '_home').show();
     $(localStorage.getItem("lang") + '_algorithms').show();
