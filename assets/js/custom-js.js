@@ -34,8 +34,6 @@ $(document).ready(function(){
     $('#ge').hide();
   });
   $('#switch-lang-ge').click(function() {
-    var getInput = prompt("Hey type something here: ");
-    localStorage.setItem("storageName",getInput);
     $('#en').hide();
     $('#sp').hide();
     $('#ge').show();
